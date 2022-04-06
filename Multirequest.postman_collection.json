@@ -1,0 +1,118 @@
+{
+	"info": {
+		"_postman_id": "778a2129-701b-474b-b5ef-0e6cdfa48e3c",
+		"name": "Multirequest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "apifake",
+			"item": [
+				{
+					"name": "[Post]-NovaPessoa",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "aa",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cpf\":\"123\",\r\n    \"nome\":\"aa\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8200/novapessoa",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8200",
+							"path": [
+								"novapessoa"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Multirequest",
+			"item": [
+				{
+					"name": "[Post]-Resttemplate_Novapessoa",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cpf\":\"123\",\r\n    \"nome\":\"aa\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8500/resttemplate_novapessoa",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8500",
+							"path": [
+								"resttemplate_novapessoa"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "[Post]-Okhttp3_NovaPessoa",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cpf\":\"123\",\r\n    \"nome\":\"aa\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8500/okhttp3_novapessoa",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8500",
+							"path": [
+								"okhttp3_novapessoa"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
