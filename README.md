@@ -16,6 +16,6 @@ Executa um teste pratico de um post passando body e header.
 3) Dito isso, você importa a  <a href="Multirequest.postman_collection.json">collection</a> no postman e executa os request conforme preferir.
    </br>
 
-Prints demonstrando abaixo:
+Prints demonstrando abaixo:</br>
 <img src="1.png"> </br>
 <img src="2.png"> </br>
